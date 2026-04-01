@@ -13,20 +13,51 @@ FILES = {
 
 st.set_page_config(page_title="Executive Dashboard - Suara Anak", layout="wide")
 
-# --- CUSTOM CSS UNTUK TAMPILAN MEWAH ---
+# --- CUSTOM CSS UNTUK TAMPILAN MEWAH (FIXED) ---
 st.markdown("""
     <style>
-    .stApp { background-color: #F8F9FA; }
-    .metric-card {
-        background-color: white; padding: 20px; border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-left: 5px solid #007bff;
+    /* Mengubah background aplikasi menjadi abu-abu terang agar kartu putih terlihat pop-out */
+    .stApp { 
+        background-color: #F0F2F6; 
     }
-    .stTabs [data-baseweb="tab-list"] { gap: 10px; }
+    
+    /* Styling untuk Custom KPI Cards */
+    .metric-card {
+        background-color: white; 
+        padding: 20px; 
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+        border-left: 6px solid #007bff;
+        margin-bottom: 10px;
+    }
+    
+    .metric-card h2 {
+        margin: 0;
+        font-size: 2rem;
+        color: #31333F;
+    }
+    
+    .metric-card b {
+        font-size: 0.9rem;
+        color: #5F6368;
+        text-transform: uppercase;
+    }
+
+    /* Styling Tab agar lebih rapi */
+    .stTabs [data-baseweb="tab-list"] {
+        gap: 8px;
+    }
+
     .stTabs [data-baseweb="tab"] {
-        background-color: white; border-radius: 5px 5px 0 0; padding: 10px 20px;
+        height: 50px;
+        white-space: pre-wrap;
+        background-color: white;
+        border-radius: 8px 8px 0 0;
+        gap: 1px;
+        padding-top: 10px;
     }
     </style>
-    """, unsafe_all_with_debug=True)
+    """, unsafe_allow_html=True) # <-- INI YANG DIUBAH (Udah bener sekarang)
 
 @st.cache_data
 def load_data():
