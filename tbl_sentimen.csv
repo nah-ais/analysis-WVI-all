@@ -1,0 +1,22 @@
+Dimensi,Sentimen,Jumlah
+1. Pendidikan,Negatif,22
+1. Pendidikan,Netral,59
+1. Pendidikan,Positif,2
+2. Kesehatan,Negatif,238
+2. Kesehatan,Netral,146
+2. Kesehatan,Positif,7
+3. Perlindungan Anak,Negatif,176
+3. Perlindungan Anak,Netral,54
+3. Perlindungan Anak,Positif,20
+4. Kesejahteraan Sosial,Negatif,81
+4. Kesejahteraan Sosial,Netral,138
+4. Kesejahteraan Sosial,Positif,7
+5. Pengetahuan Bencana,Negatif,17
+5. Pengetahuan Bencana,Netral,94
+5. Pengetahuan Bencana,Positif,9
+6. Harapan Anak,Negatif,19
+6. Harapan Anak,Netral,46
+6. Harapan Anak,Positif,5
+Lainnya,Negatif,27
+Lainnya,Netral,405
+Lainnya,Positif,14
